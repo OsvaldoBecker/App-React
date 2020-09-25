@@ -1,0 +1,16 @@
+# Obter usuários
+GET http://localhost:3001/users
+Content-Type: application/json
+###
+
+# Inserir usuário
+POST http://localhost:3001/users
+Content-Type: application/json
+
+{
+    "name": "Pedro da Silva",
+    "email": "pedro@email.com",
+    "telephone": "55 4444 2222",
+    "password": "123456"
+}
+###
