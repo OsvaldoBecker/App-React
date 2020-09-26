@@ -10,7 +10,7 @@ Content-Type: application/json
 {
     "name": "Pedro da Silva",
     "email": "pedro@email.com",
-    "telephone": "55 4444 2222",
+    "cellphone": "55 4444 2222",
     "password": "123456"
 }
 ###
