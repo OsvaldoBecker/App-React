@@ -4,7 +4,7 @@ Content-Type: application/json
 ###
 
 # Inserir usuário
-POST http://localhost:3001/users
+POST http://localhost:3001/api/users
 Content-Type: application/json
 
 {
