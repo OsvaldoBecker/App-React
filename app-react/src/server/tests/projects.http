@@ -1,0 +1,18 @@
+# Obter projetos
+GET http://localhost:3001/api/projects
+Content-Type: application/json
+###
+
+# Inserir projeto
+POST http://localhost:3001/api/projects
+Content-Type: application/json
+
+{
+    "title": "Project 1",
+    "details": "None",
+    "beginDate" : "12/12/2020",
+    "endDate": "12/12/2020",
+    "demandantName": "Pedro da Silva",
+    "demandantEmail": "pedro@email.com"
+}
+###

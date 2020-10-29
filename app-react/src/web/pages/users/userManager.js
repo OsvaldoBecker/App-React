@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import UserForm from './userForm';
-import UserOperations from './userOperations';
+import UserList from './userList';
 import UserService from "../../services/userService";
 
 import { toast, ToastContainer } from 'react-toastify';
@@ -18,14 +18,14 @@ const UserManager = () => {
       return <UserForm user={user} userInsert={userInsert} userUpdate={userUpdate} cancel={cancel} />
     }
     else {
-      return <UserOperations users={users} userDelete={userDelete} userEdit={userEdit} />
+      return <UserList users={users} userDelete={userDelete} userEdit={userEdit} />
     }
   }
 
-  useEffect(() => { usersGetAll(); }, []);
+  useEffect(() => { usersGet(); }, []);
 
-  const usersGetAll = () => {
-    UserService.getAll().then(response => {
+  const usersGet = () => {
+    UserService.get().then(response => {
       setUsers(response.data)
     }).catch(e => {
       toast.error(e);
@@ -35,7 +35,7 @@ const UserManager = () => {
   const userInsert = (user) => {
     UserService.insert(user).then(response => {
       toast.success('Inserido com sucesso!');
-      usersGetAll();
+      usersGet();
       setEditing(false);
     }).catch(e => {
       toast.error(e);
@@ -45,7 +45,7 @@ const UserManager = () => {
   const userDelete = (id) => {
     UserService.delete(id).then(response => {
       toast.success('Excluído com sucesso!');
-      usersGetAll();
+      usersGet();
     }).catch(e => {
       toast.error(e);
     });
@@ -54,7 +54,7 @@ const UserManager = () => {
   const userUpdate = (user) => {
     UserService.update(user).then(response => {
       toast.success('Alterado com sucesso!');
-      usersGetAll();
+      usersGet();
       setEditing(false);
     }).catch(e => {
       toast.error(e);

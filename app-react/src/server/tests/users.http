@@ -1,5 +1,5 @@
 # Obter usuários
-GET http://localhost:3001/users
+GET http://localhost:3001/api/users
 Content-Type: application/json
 ###
 
@@ -10,7 +10,6 @@ Content-Type: application/json
 {
     "name": "Pedro da Silva",
     "email": "pedro@email.com",
-    "cellphone": "55 4444 2222",
-    "password": "123456"
+    "cellphone": "55 4444 2222"
 }
 ###

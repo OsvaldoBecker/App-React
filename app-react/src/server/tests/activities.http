@@ -1,0 +1,15 @@
+# Obter atividades
+GET http://localhost:3001/api/activities
+Content-Type: application/json
+###
+
+# Inserir atividade
+POST http://localhost:3001/api/activities
+Content-Type: application/json
+
+{
+    "title": "Atividade 3",
+    "project": "Projeto 1",
+    "responsible": "João"
+}
+###
