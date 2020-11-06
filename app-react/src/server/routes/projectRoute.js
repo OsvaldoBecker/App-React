@@ -1,12 +1,11 @@
 const express = require('express');
 const routes = express.Router();
-const controller = require('../controller/projectController');
+const controle = require('../controller/ProjectController');
 
-routes.route('/projects').get(controller.getAll);
-routes.route('/projects/:id').get(controller.getById);
-routes.route('/projects').post(controller.insert);
-routes.route('/projects').put(controller.update);
-routes.route('/projects/:id').delete(controller.delete);
-routes.route('/projects/filter/:filter').get(controller.filtrate);
-
+routes.route('/projects').get(controle.getAll);
+routes.route('/projects/:id').get(controle.get);
+routes.route('/projects').post(controle.insert);
+routes.route('/projects').put(controle.update);
+routes.route('/projects/:id').delete(controle.delete);
+routes.route('/projects/filter/:filter').get(controle.filtrate);
 module.exports = routes;

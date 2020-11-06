@@ -1,0 +1,72 @@
+.p-datatable.p-datatable-sm .p-datatable-tbody > tr > td {
+    padding: 0.0rem 0.5rem;
+}
+
+.p-datatable.p-datatable-sm .p-datatable-thead > tr > th {
+	padding: 0.0rem 0.5rem;
+}
+
+
+
+.p-inputtext {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 1rem;
+	color: #495057;
+	background: #ffffff;
+	padding: 0.1rem 0.2rem;
+	border: 1px solid #ced4da;
+	-webkit-transition: background-color 0.2s, color 0.2s, border-color 0.2s, -webkit-box-shadow 0.2s;
+	transition: background-color 0.2s, color 0.2s, border-color 0.2s, -webkit-box-shadow 0.2s;
+	transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+	transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: 3px;
+}
+
+.p-field {
+	margin-bottom: 0.5rem;
+}
+label {
+	font-weight: 600;
+	max-width: 100%;
+	display: block;
+	margin: 0.0rem 0 0.5rem;
+}
+
+.p-button {
+	color: #ffffff;
+	background: #2196F3;
+	border: 1px solid #2196F3;
+	padding: 0.3rem 0.7rem;
+	font-size: 1rem;
+	-webkit-transition: background-color 0.2s, color 0.2s, border-color 0.2s, -webkit-box-shadow 0.2s;
+	transition: background-color 0.2s, color 0.2s, border-color 0.2s, -webkit-box-shadow 0.2s;
+	transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+	transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
+	border-radius: 3px;
+}
+
+p, ol, ul, dl, table {
+	margin: 0 0 0.2rem 0;
+}
+
+.p-paginator .p-dropdown {
+	margin-left: 0.5rem;
+	height: 1.957rem;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page {
+	background-color: transparent;
+	border: 0 none;
+	color: #6c757d;
+	min-width: 1.857rem;
+	height: 1.557rem;
+	margin: 0.143rem;
+	-webkit-transition: -webkit-box-shadow 0.2s;
+	transition: -webkit-box-shadow 0.2s;
+	transition: box-shadow 0.2s;
+	transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+	border-radius: 3px;
+}
