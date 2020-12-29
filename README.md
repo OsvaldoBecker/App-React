@@ -1,6 +1,6 @@
-# Projeto de aplicativo Web
+# Web application project
 
-Suporta CRUD de objetos com relacionamentos entre si
-- Aplicativo em React com códigos em JavaScript
-- API em NodeJS com códigos em JavaScript
-- API acessa um banco de dados Mongo
+Supports CRUD of objects with relationships to each other
+- React application with JavaScript
+- NodeJS API with JavaScript
+- API can access a Mongo database
