@@ -1,4 +1,4 @@
-# A web application with CRUD support
+# Web application with CRUD support
 
 Supports CRUD of objects with relationships to each other
 - React application with JavaScript
